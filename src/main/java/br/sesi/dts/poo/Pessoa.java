@@ -7,7 +7,13 @@ import br.sesi.dts.poo.tronco.Tronco;
 
 public class Pessoa {
 
-    Cabeca cabeca;
-    Tronco tronco;
-    MembrosInferiores MI;
+    public Cabeca cabeca;
+    public Tronco tronco;
+    public MembrosInferiores inferior;
+
+    public Pessoa(){
+        this.cabeca = new Cabeca();
+        this.tronco = new Tronco();
+        this.inferior = new MembrosInferiores();
+    }
 }
